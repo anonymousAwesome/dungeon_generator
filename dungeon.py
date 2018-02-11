@@ -14,6 +14,8 @@ circle_line_width=3
 line_width=3
 grid_line_width=1
 w, h = 15, 15
+fill_percent=0.8
+diagonal_percent=.25
 
 pygame.init()
 width=(h+1)*margin #it's backwards, I know, but I can't be bothered to fix the error in the code.
@@ -26,11 +28,8 @@ clock = pygame.time.Clock()
 paused=False
 stopped=False
 phase="drawing"
-diagonal_percent=.25
 
 nodelist = numpy.zeros((h,w))
-fill_percent=0.5
-connection_percent=1
 
 def addnode(coordinates):
     nodelist[coordinates[0]][coordinates[1]]=1
