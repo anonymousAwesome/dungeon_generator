@@ -1,3 +1,13 @@
+'''
+The workflow is a little funky. First the program generates the dungeon,
+then it waits. Once you press any key it takes any dead-ends and
+integrates them into the rest of the dungeon, though it won't do this if
+there are no nodes close enough to the dead-end, or if the nearby nodes
+would be at too steep an angle.
+
+Press Return to end the program.
+'''
+
 import random
 import pygame
 import numpy
